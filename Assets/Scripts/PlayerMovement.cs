@@ -20,12 +20,12 @@ public class PlayerMovement : MonoBehaviour
     {
         IColliable colliable = other.GetComponent<IColliable>();
 
-        if (colliable != null)
-        {
-            colliable.SetSpeed(this);
-        }
+ //       if (colliable != null)
+ //       {
+ //           colliable.SetSpeed(this);
+ //       }
 
-        TryGetComponent(out IColliable collidable);
+ //       TryGetComponent(out IColliable collidable);
         {
 
         }
