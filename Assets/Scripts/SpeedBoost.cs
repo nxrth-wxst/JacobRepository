@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class SpeedBoost : MonoBehaviour, IColliable
+//public class SpeedBoost : MonoBehaviour, IColliable
 {
 
-    void IColliable.SetSpeed(PlayerMovement player)
+  //  void IColliable.SetSpeed(PlayerMovement player)
     {
         Debug.Log("YOU GOT SPEED");
-        Destroy(gameObject);
+ //       Destroy(gameObject);
       
     }
 

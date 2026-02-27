@@ -4,9 +4,9 @@ using UnityEngine;
 public interface IColliable
 {
 
-    public void SetSpeed(PlayerMovement player);
+    public void OnCollision(PlayerMovement player);
 
-   
+    //public void SetJump(PlayerMovement player);
 
 
 }

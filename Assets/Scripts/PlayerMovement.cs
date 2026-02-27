@@ -3,10 +3,17 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
-
+    public float jump = 5f;
+    public Rigidbody playerPhysics;
     void Update()
     {
-      
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            playerPhysics.AddForce(transform.up * jump);
+        }
+        
+        
         float moveHorizontal = Input.GetAxis("Horizontal"); 
         float moveVertical = Input.GetAxis("Vertical");   
 
@@ -20,12 +27,12 @@ public class PlayerMovement : MonoBehaviour
     {
         IColliable colliable = other.GetComponent<IColliable>();
 
- //       if (colliable != null)
- //       {
- //           colliable.SetSpeed(this);
- //       }
+        if (colliable != null)
+       {
+            colliable.SetSpeed(this);
+       }
 
- //       TryGetComponent(out IColliable collidable);
+       TryGetComponent(out IColliable collidable);
         {
 
         }
