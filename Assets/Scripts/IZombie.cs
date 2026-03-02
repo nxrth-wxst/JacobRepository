@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IZombie
+public interface IZombie
 {
     
 }
